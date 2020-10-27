@@ -1,0 +1,30 @@
+{form form}
+    <ul class="errors" n:if="$form->hasErrors()">
+        <li n:foreach="$form->errors as $error">{$error}</li>
+    </ul>
+    <div class="input-group mb-3">
+        <input n:name="email" class="form-control" placeholder="{_'security.loginForm.email'}">
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+            </div>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input n:name="password" class="form-control" placeholder="{_security.loginForm.password}">
+        <div class="input-group-append">
+            <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+        </div>
+        <!-- /.col -->
+        <div class="col-4">
+            <button n:name="submit" type="submit" class="btn btn-primary btn-block">{_'security.loginForm.login'}</button>
+        </div>
+        <!-- /.col -->
+    </div>
+{/form}

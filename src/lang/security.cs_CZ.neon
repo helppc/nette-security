@@ -1,0 +1,4 @@
+loginForm:
+    email: Emailová adresa
+    password: Heslo
+    login: Přihlásit

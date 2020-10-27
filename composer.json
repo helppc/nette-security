@@ -1,0 +1,23 @@
+{
+	"name": "helppc/nette-security",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Tomáš Kulhánek",
+			"email": "info@tirus.cz"
+		}
+	],
+	"require": {
+		"php": "^7.2",
+		"latte/latte": "^2.5",
+		"nette/di": "^3.0",
+		"nette/security": "^3.0",
+		"helppc/nette-utils": "@dev",
+		"contributte/translation": "^0.7.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"HelpPC\\NetteSecurity\\": "src"
+		}
+	}
+}
